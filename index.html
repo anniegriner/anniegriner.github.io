@@ -132,6 +132,32 @@
       line-height:1.6;
     }
 
+    /* Badges (Fun / Business) */
+    .badge{
+      display:inline-block;
+      margin-left:8px;
+      padding:2px 8px;
+      font-size:12px;
+      font-weight:600;
+      border-radius:999px;
+      vertical-align:middle;
+      line-height:1.4;
+    }
+
+    /* Fun badge */
+    .badge.fun{
+      background:rgba(37, 99, 235, 0.1);
+      color:var(--accent);
+      border:1px solid rgba(37, 99, 235, 0.25);
+    }
+
+    /* Business badge */
+    .badge.business{
+      background:#f3f4f6;
+      color:#374151;
+      border:1px solid #d1d5db;
+    }
+
     /* Links + buttons (subtle) */
     a{
       color:var(--accent);
@@ -217,13 +243,25 @@
       <h2>Selected Work</h2>
       <div class="grid">
         <div class="card">
-          <h3>Perception vs Reality: Jeep Wrangler Sales <span style="color: var(--muted); font-weight:600;">(coming soon)</span></h3>
-          <p>A behavioral analytics case study exploring confirmation bias and how data challenges intuition.</p>
-        </div>
-        <div class="card">
-          <h3>Customer Retention & Revenue Risk <span style="color: var(--muted); font-weight:600;">(coming soon)</span></h3>
-          <p>An executive dashboard designed to identify churn risk, revenue exposure, and prioritization opportunities.</p>
-        </div>
+  <h3>
+    Perception vs Reality: Jeep Wrangler Sales
+    <span class="badge fun">Fun</span>
+  </h3>
+  <p>
+    A behavioral analytics case study exploring confirmation bias and how data challenges intuition.
+  </p>
+</div>
+
+<div class="card">
+  <h3>
+    Customer Retention & Revenue Risk
+    <span class="badge business">Business</span>
+  </h3>
+  <p>
+    An executive dashboard designed to identify churn risk, revenue exposure, and prioritization opportunities.
+  </p>
+</div>
+
       </div>
     </section>
 
