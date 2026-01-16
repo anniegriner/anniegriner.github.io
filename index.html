@@ -16,7 +16,7 @@
       --text:#111827;
       --muted:#6b7280;
       --line:#e5e7eb;
-      --accent:#2f855a; /* muted green */
+      --accent:#2563eb; /* professional blue */
       --bg:#ffffff;
       --card:#f9fafb;
     }
@@ -67,7 +67,10 @@
       color:var(--muted);
       font-size:13.5px;
       padding-top:6px;
-      min-width:180px;
+      min-width:260px;          /* widen to avoid wrapping */
+      white-space:nowrap;       /* force single line */
+}
+
     }
     .dot{
       display:inline-block;
@@ -164,6 +167,11 @@
       border-color:rgba(47,133,90,.35);
       transform:translateY(-1px);
     }
+    
+    .pill.linkedin {
+      border-color: rgba(37, 99, 235, 0.4);
+    }
+    
     .pill span{ color:var(--accent); font-weight:800; }
 
     /* Footer note */
@@ -243,11 +251,23 @@
 
     <section>
       <h2>Get in Touch</h2>
-      <div class="links">
-        <a class="pill" href="#" title="Add your resume PDF link later"><span>↗</span> Resume</a>
-        <a class="pill" href="#" title="Add your LinkedIn link later"><span>↗</span> LinkedIn</a>
-        <a class="pill" href="#" title="Add a contact method later"><span>↗</span> Contact</a>
-      </div>
+     <div class="links">
+  <a class="pill" href="#" title="Add your resume PDF link later">
+    📄 Resume
+  </a>
+
+  <a class="pill linkedin" href="#" title="Add your LinkedIn link later">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.07c.67-1.27 2.3-2.6 4.73-2.6 5.06 0 6 3.33 6 7.66V24h-5v-7.2c0-1.72-.03-3.94-2.4-3.94-2.4 0-2.77 1.87-2.77 3.8V24h-5V8z"/>
+    </svg>
+    LinkedIn
+  </a>
+
+  <a class="pill" href="#" title="Add a contact method later">
+    ✉️ Contact
+  </a>
+</div>
+
       <p class="foot">Analytics portfolio by Annie Griner.</p>
     </section>
   </main>
