@@ -91,14 +91,7 @@
       font-weight:700;
       position:relative;
     }
-    h2:before{
-      content:"";
-      display:block;
-      width:44px;
-      height:2px;
-      background:var(--line);
-      margin-bottom:10px;
-    }
+    
     p{ margin:0 0 14px 0; max-width:72ch; }
     ul{ margin:0; padding-left:18px; max-width:72ch; }
     li{ margin:8px 0; }
@@ -113,15 +106,18 @@
     .card{
       grid-column:span 6;
       background:var(--card);
-      border:1px solid var(--line);
+      border:1px solid rgba(37, 99, 235, 0.25); /* blue border */
       border-radius:14px;
       padding:16px 16px 14px;
       transition:transform .12s ease, border-color .12s ease, background .12s ease;
     }
-    .card:hover{
-      transform:translateY(-2px);
-      border-color:rgba(47,133,90,.35);
-      background:#ffffff;
+
+.card:hover{
+  transform:translateY(-2px);
+  border-color:rgba(37, 99, 235, 0.5); /* stronger blue on hover */
+  background:#ffffff;
+}
+
     }
     .card h3{
       margin:0 0 6px 0;
@@ -168,9 +164,6 @@
       transform:translateY(-1px);
     }
     
-    .pill.linkedin {
-      border-color: rgba(37, 99, 235, 0.4);
-    }
     
     .pill span{ color:var(--accent); font-weight:800; }
 
