@@ -37,6 +37,21 @@
       padding:72px 20px 84px;
     }
 
+    /* Section lead emphasis (not accent-colored) */
+    section p strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+    
+      .section-intro{
+      margin-top: -4px;
+      margin-bottom: 18px;
+      font-size: 14.5px;
+      color: var(--muted);
+      max-width: 72ch;
+    }
+
+
     /* Hero */
     .hero{
       display:flex;
@@ -120,6 +135,7 @@
 
     }
     .card h3{
+      max-width: 28ch;
       margin:0 0 6px 0;
       font-size:16px;
       font-weight:700;
@@ -230,7 +246,7 @@
     <section>
       <h2>What I Do</h2>
       <p>
-        I build analytics experiences that help leaders understand what’s happening, why it’s happening, and what to do next.
+        <strong>I build analytics experiences that help leaders understand what’s happening, why it’s happening, and what to do next.
       </p>
       <ul>
         <li>Power BI dashboards for executive and operational audiences</li>
@@ -241,6 +257,9 @@
 
     <section>
       <h2>Selected Work</h2>
+      <p class="section-intro">
+        A mix of business-critical dashboards and curiosity-driven analysis.
+      </p>
       <div class="grid">
         <div class="card">
   <h3>
