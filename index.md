@@ -1,7 +1,7 @@
 ---
 layout: default
+title: Annie Griner
 ---
-
 # Annie Griner
 **Senior Insights Analyst**
 
