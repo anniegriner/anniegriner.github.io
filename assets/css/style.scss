@@ -3,6 +3,10 @@
 
 @import "minima";
 
+/* -------------------------------------------------
+   GLOBAL LAYOUT
+-------------------------------------------------- */
+
 /* Constrain width + breathing room */
 .page-content {
   max-width: 860px;
@@ -10,24 +14,39 @@
   padding: 3rem 1.5rem;
 }
 
-/* Hide Minima’s site header to avoid duplicate name/title */
-.site-header {
-  display: none;
+/* -------------------------------------------------
+   REMOVE ALL MINIMA CHROME (HEADER + FOOTER)
+-------------------------------------------------- */
+
+.site-header,
+header.site-header,
+.site-title,
+.site-nav,
+.site-footer,
+footer.site-footer {
+  display: none !important;
 }
 
-/* Typography */
+/* -------------------------------------------------
+   TYPOGRAPHY
+-------------------------------------------------- */
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
                Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.65;
   color: #1f2933;
+  background: #ffffff;
 }
 
-/* Headings */
+/* -------------------------------------------------
+   HEADINGS
+-------------------------------------------------- */
+
 h1 {
   font-size: 2.6rem;
   letter-spacing: -0.02em;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.4rem;
 }
 
 h2 {
@@ -38,19 +57,26 @@ h2 {
   padding-bottom: 0.25rem;
 }
 
-/* The “creative but clean” accent: bold line right under H1 */
+/* -------------------------------------------------
+   SUBTLE CREATIVE ACCENT
+-------------------------------------------------- */
+
+/* Job title directly under name */
 h1 + p strong,
 h1 + p b {
   color: #2f855a; /* muted green */
   font-weight: 600;
 }
 
-/* Safety net: ensure bold emphasis is accented consistently */
+/* Safety net: any emphasized text inside content */
 .page-content p strong {
   color: #2f855a;
 }
 
-/* Links: subtle underline */
+/* -------------------------------------------------
+   LINKS
+-------------------------------------------------- */
+
 a {
   color: #2f855a;
   text-decoration: none;
@@ -61,12 +87,22 @@ a:hover {
   border-bottom-color: #2f855a;
 }
 
-/* Lists: tidy spacing */
-ul { padding-left: 1.2rem; }
-li { margin-bottom: 0.4rem; }
+/* -------------------------------------------------
+   LISTS
+-------------------------------------------------- */
 
-/* Footer line (your italic sign-off) */
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+/* -------------------------------------------------
+   FOOTNOTE / SIGN-OFF TEXT
+-------------------------------------------------- */
+
 em {
   color: #6b7280;
-  font-size: 0.9rem;
-}
+  font-size: 0.9re
