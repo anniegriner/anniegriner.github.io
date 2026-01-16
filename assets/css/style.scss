@@ -39,9 +39,15 @@ h2 {
 }
 
 /* The “creative but clean” accent: bold line right under H1 */
-h1 + p strong {
+h1 + p strong,
+h1 + p b {
   color: #2f855a; /* muted green */
   font-weight: 600;
+}
+
+/* Safety net: ensure bold emphasis is accented consistently */
+.page-content p strong {
+  color: #2f855a;
 }
 
 /* Links: subtle underline */
