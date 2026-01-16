@@ -3,11 +3,16 @@
 
 @import "minima";
 
-/* Global layout */
+/* Constrain width + breathing room */
 .page-content {
   max-width: 860px;
   margin: 0 auto;
   padding: 3rem 1.5rem;
+}
+
+/* Hide Minima’s site header to avoid duplicate name/title */
+.site-header {
+  display: none;
 }
 
 /* Typography */
@@ -22,33 +27,24 @@ body {
 h1 {
   font-size: 2.6rem;
   letter-spacing: -0.02em;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.35rem;
 }
 
 h2 {
   font-size: 1.6rem;
-  margin-top: 2.5rem;
+  margin-top: 2.25rem;
   margin-bottom: 0.75rem;
   border-bottom: 1px solid #e5e7eb;
   padding-bottom: 0.25rem;
 }
 
-/* Subtle creative accent */
+/* The “creative but clean” accent: bold line right under H1 */
 h1 + p strong {
   color: #2f855a; /* muted green */
-  font-weight: 500;
+  font-weight: 600;
 }
 
-/* Lists */
-ul {
-  padding-left: 1.2rem;
-}
-
-li {
-  margin-bottom: 0.4rem;
-}
-
-/* Links */
+/* Links: subtle underline */
 a {
   color: #2f855a;
   text-decoration: none;
@@ -59,7 +55,11 @@ a:hover {
   border-bottom-color: #2f855a;
 }
 
-/* Footer text */
+/* Lists: tidy spacing */
+ul { padding-left: 1.2rem; }
+li { margin-bottom: 0.4rem; }
+
+/* Footer line (your italic sign-off) */
 em {
   color: #6b7280;
   font-size: 0.9rem;
