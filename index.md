@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Annie Griner
 **Senior Insights Analyst**
 
