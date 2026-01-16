@@ -1,5 +1,5 @@
 # Annie Griner
-*Senior Insights Analyst*
+**Senior Insights Analyst**
 
 I design executive-ready dashboards that turn complex data into clear, actionable decisions.
 
