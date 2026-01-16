@@ -1,0 +1,66 @@
+---
+---
+
+@import "minima";
+
+/* Global layout */
+.page-content {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+/* Typography */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.65;
+  color: #1f2933;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.6rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.25rem;
+}
+
+/* Subtle creative accent */
+h1 + p strong {
+  color: #2f855a; /* muted green */
+  font-weight: 500;
+}
+
+/* Lists */
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+/* Links */
+a {
+  color: #2f855a;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(47, 133, 90, 0.3);
+}
+
+a:hover {
+  border-bottom-color: #2f855a;
+}
+
+/* Footer text */
+em {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
